@@ -150,7 +150,7 @@ class currentWeatherWidget extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "${weatherDataCurrent.current.uv}KM/h",
+                  "${weatherDataCurrent.current.uv}",
                   style: GoogleFonts.lora(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,

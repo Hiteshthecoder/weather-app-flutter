@@ -6,6 +6,7 @@ import 'package:weather_app/Global_Controller/Global_Controller.dart';
 import 'package:weather_app/widgets/Header_Widget.dart';
 import 'package:weather_app/widgets/Hourly_Weather_Widget_and_daily_forecast.dart';
 import 'package:weather_app/widgets/current_weather_widget.dart';
+import 'package:weather_app/widgets/sleek_circular_slider.dart';
 
 class HOmeScreen extends StatefulWidget {
   const HOmeScreen({super.key});
@@ -39,6 +40,11 @@ class _HOmeScreenState extends State<HOmeScreen> {
                         weatherDataHourly: globalController
                             .getWeatherData()
                             .getWeatherDataHoury(),
+                      ),
+                      SleekCircularWidget(
+                        weatherDataCurrent: globalController
+                            .getWeatherData()
+                            .getCurrentWeather(),
                       ),
                     ],
                   ),
